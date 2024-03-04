@@ -33,6 +33,7 @@ public class Contact {
         return this;
     }
 
+
     public Contact setDescription(String description) {
         this.description = description;
         return this;
@@ -60,5 +61,13 @@ public class Contact {
 
     public String getDescription() {
         return description;
+    }
+
+    @Override
+    public String toString() {
+        return "Contact{" +
+                "name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 }
